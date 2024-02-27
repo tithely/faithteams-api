@@ -1,0 +1,51 @@
+{
+    "success": true,
+    "message": "Contribution Created",
+    "data": [
+        {
+            "contributionId": 4281056,
+            "parentId": 4281056,
+            "recordType": "H",
+            "personId": 769839,
+            "personId2": -98,
+            "batchId": 182136,
+            "sortIndex": 0,
+            "amount": 100,
+            "fee": 2,
+            "netAmount": 98.00,
+            "contributionTypeId": 24,
+            "fundId": 0,
+            "checkNumber": "",
+            "status": "A",
+            "note": "for the dogs",
+            "createdDtm": "2023-05-16 13:51:47",
+            "createdUser": 27988,
+            "updatedDtm": "2023-05-16 13:51:47",
+            "updatedUser": 27988,
+            "giveDtm": "2023-05-16 13:51:47"
+        },
+        {
+            "contributionId": 4373070,
+            "parentId": 4281056,
+            "recordType": "D",
+            "personId": 769839,
+            "personId2": -98,
+            "batchId": 182136,
+            "sortIndex": 1,
+            "amount": 100,
+            "fee": 2,
+            "netAmount": 98.00,
+            "contributionTypeId": 24,
+            "fundId": 7833,
+            "status": "A",
+            "note": "for the dogs",
+            "createdDtm": "2023-05-16 13:51:47",
+            "createdUser": 27988,
+            "updatedDtm": "2023-05-16 13:51:47",
+            "updatedUser": 27988,
+            "giveDtm": "2023-05-16 13:51:47"
+        }
+    ],
+    "authenticated": true,
+    "authorized": true
+}

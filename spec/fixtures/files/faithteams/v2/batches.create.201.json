@@ -1,0 +1,15 @@
+{
+    "success": true,
+    "message": "Batch Created",
+    "data": {
+        "batchId": 183055,
+        "orgId": 3409,
+        "status": "O",
+        "title": "Tithely 2023-04-23 Bank",
+        "dtm": "2023-04-23 00:00:00",
+        "updatedUser": 27850,
+        "contributions": []
+    },
+    "authenticated": true,
+    "authorized": true
+}

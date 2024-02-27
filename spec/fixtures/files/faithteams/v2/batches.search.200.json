@@ -1,0 +1,178 @@
+{
+    "success": true,
+    "message": "Batches Retrieved",
+    "data": [
+        {
+            "batchId": 200761,
+            "orgId": 3425,
+            "status": "O",
+            "title": "2023-08-23 Central Campus Tithely Card",
+            "dtm": "2023-08-23 00:00:00",
+            "updatedDtm": "2023-08-24 13:04:29",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 200782,
+            "orgId": 3425,
+            "status": "D",
+            "title": "2023-08-20 Central Campus Tithely Card",
+            "dtm": "2023-08-20 00:00:00",
+            "updatedDtm": "2023-08-24 13:55:55",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 196734,
+            "orgId": 3425,
+            "status": "D",
+            "serviceId": 0,
+            "title": "2023-07-26 Tithely",
+            "info": "",
+            "dtm": "2023-07-26 00:00:00",
+            "updatedDtm": "2023-07-27 11:56:19",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 196634,
+            "orgId": 3425,
+            "status": "D",
+            "title": "2023-07-26 Tithely",
+            "dtm": "2023-07-26 00:00:00",
+            "updatedDtm": "2023-07-26 13:28:59",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 196455,
+            "orgId": 3425,
+            "status": "D",
+            "title": "2023-07-24 Tithely",
+            "dtm": "2023-07-24 00:00:00",
+            "updatedDtm": "2023-07-25 20:22:29",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 195788,
+            "orgId": 3425,
+            "status": "O",
+            "title": "Tithely 2023-07-19 Bank",
+            "dtm": "2023-07-19 00:00:00",
+            "updatedDtm": "2023-07-19 19:43:51",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 195771,
+            "orgId": 3425,
+            "status": "O",
+            "serviceId": 0,
+            "title": "daves",
+            "info": "",
+            "dtm": "2023-07-19 00:00:00",
+            "updatedDtm": "2023-07-19 11:47:11",
+            "updatedUser": 27988
+        },
+        {
+            "batchId": 195770,
+            "orgId": 3425,
+            "status": "C",
+            "title": "Tithely 2023-07-19 Card",
+            "dtm": "2023-07-19 00:00:00",
+            "updatedDtm": "2023-07-19 11:51:48",
+            "updatedUser": 27988
+        },
+        {
+            "batchId": 195596,
+            "orgId": 3425,
+            "status": "O",
+            "serviceId": 0,
+            "title": "Daves",
+            "info": "batch",
+            "dtm": "2023-07-18 00:00:00",
+            "updatedDtm": "2023-07-18 19:44:46",
+            "updatedUser": 27988
+        },
+        {
+            "batchId": 195592,
+            "orgId": 3425,
+            "status": "O",
+            "serviceId": 0,
+            "title": "Daves Batch",
+            "info": "",
+            "dtm": "2023-07-18 00:00:00",
+            "updatedDtm": "2023-07-18 18:47:00",
+            "updatedUser": 27988
+        },
+        {
+            "batchId": 191708,
+            "orgId": 3425,
+            "status": "O",
+            "title": "Test Batch",
+            "dtm": "2023-06-19 14:36:35",
+            "updatedDtm": "2023-06-19 14:36:35",
+            "updatedUser": 27986
+        },
+        {
+            "batchId": 191002,
+            "orgId": 3425,
+            "status": "O",
+            "title": "Dumas Batch 2",
+            "dtm": "2023-06-12 21:00:12",
+            "updatedDtm": "2023-06-12 21:00:12",
+            "updatedUser": 27986
+        },
+        {
+            "batchId": 188957,
+            "orgId": 3425,
+            "status": "O",
+            "title": "Dumas Batch",
+            "dtm": "2023-05-26 22:19:18",
+            "updatedDtm": "2023-05-26 22:19:18",
+            "updatedUser": 27986
+        },
+        {
+            "batchId": 183273,
+            "orgId": 3425,
+            "status": "O",
+            "title": "Test Batch",
+            "dtm": "2023-04-25 00:00:00",
+            "updatedDtm": "2023-04-25 15:48:35",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 183275,
+            "orgId": 3425,
+            "status": "O",
+            "title": "Test Batch",
+            "dtm": "2023-04-25 00:00:00",
+            "updatedDtm": "2023-04-25 11:44:58",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 191711,
+            "orgId": 3425,
+            "status": "O",
+            "title": "Test Batch",
+            "dtm": "2023-04-23 00:00:01",
+            "updatedDtm": "2023-06-19 14:51:20",
+            "updatedUser": 27986
+        },
+        {
+            "batchId": 191710,
+            "orgId": 3425,
+            "status": "O",
+            "title": "Test Batch",
+            "dtm": "2023-04-23 00:00:00",
+            "updatedDtm": "2023-06-19 14:51:05",
+            "updatedUser": 27986
+        },
+        {
+            "batchId": 187704,
+            "orgId": 3425,
+            "status": "O",
+            "title": "Tithely 2023-04-21 Bank",
+            "dtm": "2023-04-21 00:00:00",
+            "updatedDtm": "2023-05-16 16:57:09",
+            "updatedUser": 27988
+        }
+    ],
+    "authenticated": true,
+    "authorized": true
+}

@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "message": "Error: null",
+    "authenticated": true,
+    "authorized": true
+}

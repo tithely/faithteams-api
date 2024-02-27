@@ -1,0 +1,2390 @@
+{
+    "_id": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+    "colName": "FaithTeams",
+    "created": "2023-04-21T12:12:05.373Z",
+    "sortNum": 5000,
+    "folders": [
+        {
+            "_id": "b7db9ed9-6922-4355-a702-f40e338a3c97",
+            "name": "api.faithteams.com/api/v1",
+            "containerId": "",
+            "created": "2023-04-21T12:14:53.422Z",
+            "sortNum": 90000
+        },
+        {
+            "_id": "2c7360a8-b66d-4c69-8e4e-cbef73468702",
+            "name": "app.faithteams.com/api/v2",
+            "containerId": "",
+            "created": "2023-04-21T12:26:41.726Z",
+            "sortNum": 70000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "Token",
+                        "value": "{{auth_token}}"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "1afc957b-4a11-406e-8c5e-2c655363d86d",
+            "name": "api-v2.faithteams.com",
+            "containerId": "",
+            "created": "2023-04-21T12:32:26.962Z",
+            "sortNum": 80000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "Token",
+                        "value": "{{auth_token}}"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "f04b0b43-e115-4e4b-9d2c-e0a035d63476",
+            "name": "Batch",
+            "containerId": "1afc957b-4a11-406e-8c5e-2c655363d86d",
+            "created": "2023-04-21T14:48:05.934Z",
+            "sortNum": 90000
+        },
+        {
+            "_id": "324f838f-8520-477a-9a1b-4d43fbffbfba",
+            "name": "Fund",
+            "containerId": "1afc957b-4a11-406e-8c5e-2c655363d86d",
+            "created": "2023-04-21T14:48:38.405Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "2d864747-9252-4403-a578-7da0625fca15",
+            "name": "Contribution",
+            "containerId": "1afc957b-4a11-406e-8c5e-2c655363d86d",
+            "created": "2023-04-21T14:49:01.770Z",
+            "sortNum": 110000
+        },
+        {
+            "_id": "f84d04be-9465-4248-80ed-c891631791c9",
+            "name": "People",
+            "containerId": "2c7360a8-b66d-4c69-8e4e-cbef73468702",
+            "created": "2023-04-21T14:50:02.330Z",
+            "sortNum": 120000
+        },
+        {
+            "_id": "e1d78a16-8cfe-49e1-8443-f5a5567bf968",
+            "name": "Error",
+            "containerId": "1afc957b-4a11-406e-8c5e-2c655363d86d",
+            "created": "2023-08-17T14:51:01.880Z",
+            "sortNum": 150000
+        },
+        {
+            "_id": "f4e606e9-84b5-44d8-a8f8-96b30d60706e",
+            "name": "Contribution Type",
+            "containerId": "1afc957b-4a11-406e-8c5e-2c655363d86d",
+            "created": "2023-08-28T15:11:16.800Z",
+            "sortNum": 140000
+        },
+        {
+            "_id": "34e3950c-1ac4-4264-bd01-094bee967919",
+            "name": "Tag",
+            "containerId": "1afc957b-4a11-406e-8c5e-2c655363d86d",
+            "created": "2023-08-28T22:43:32.887Z",
+            "sortNum": 150000
+        },
+        {
+            "_id": "6494946f-fb10-4415-922e-5a8cb0a82c5c",
+            "name": "User",
+            "containerId": "2c7360a8-b66d-4c69-8e4e-cbef73468702",
+            "created": "2023-08-28T22:47:54.204Z",
+            "sortNum": 160000
+        },
+        {
+            "_id": "3652ba47-0f64-45e1-9489-177c05ddeb0d",
+            "name": "Team & Organization",
+            "containerId": "2c7360a8-b66d-4c69-8e4e-cbef73468702",
+            "created": "2023-08-28T22:54:53.464Z",
+            "sortNum": 170000
+        },
+        {
+            "_id": "20b77f08-bf96-486e-833d-3bb5a9fb8697",
+            "name": "Error",
+            "containerId": "2c7360a8-b66d-4c69-8e4e-cbef73468702",
+            "created": "2023-08-28T23:04:32.795Z",
+            "sortNum": 180000
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Accept",
+                "value": "application/json"
+            },
+            {
+                "name": "Content-Type",
+                "value": "application/json"
+            }
+        ],
+        "preReq": {
+            "runRequests": [
+                {
+                    "reqId": "7cf80f4f-94a6-41b8-b81e-a55374cf5118",
+                    "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                    "triggerCondition": "run-var-empty",
+                    "triggerValue": "{{auth_token}}"
+                }
+            ]
+        },
+        "envId": "ca95294a-a9fa-4de5-9a20-e0cbe4c69aec"
+    },
+    "requests": [
+        {
+            "_id": "df58976e-8c87-476e-992c-cb140ecf944c",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "b7db9ed9-6922-4355-a702-f40e338a3c97",
+            "name": "Authenticate",
+            "url": "https://api.faithteams.com/api/v1/authenticate",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-21T12:17:10.408Z",
+            "modified": "2023-08-28T23:11:11.216Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Basic: {{user_credentials | btoa}}"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data.token",
+                    "action": "setto",
+                    "value": "{{auth_token}}"
+                },
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.token",
+                    "action": "istype",
+                    "value": "string"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Logon Successful"
+                }
+            ]
+        },
+        {
+            "_id": "170c67bf-0ba0-4792-ac89-2f5a93841b9e",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f84d04be-9465-4248-80ed-c891631791c9",
+            "name": "People",
+            "url": "https://app.faithteams.com/api/v2/people?status=A",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-21T12:29:46.647Z",
+            "modified": "2023-08-28T19:07:30.511Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "status",
+                    "value": "A",
+                    "isPath": false
+                },
+                {
+                    "name": "lastName",
+                    "value": "Simpson",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "firstName",
+                    "value": "Homer",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "homeEmail",
+                    "value": "bart@simpsons.com",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "People Retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[0].personId",
+                    "action": "setto",
+                    "value": "{{person_id}}"
+                }
+            ],
+            "docs": "GET /people `homeEmail` filter didn't work with `david.orweller+ft-2@yourgiving.co` but did work with `bart@simpsons.com`.  We _may_ want to test this a bit more before we rely on it when finding people."
+        },
+        {
+            "_id": "a591a254-b6b1-4b5e-b424-72bc4df1d77f",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "324f838f-8520-477a-9a1b-4d43fbffbfba",
+            "name": "Funds",
+            "url": "https://api-v2.faithteams.com/funds",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-21T12:33:01.187Z",
+            "modified": "2023-08-28T15:14:23.271Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[0].fundId",
+                    "action": "setto",
+                    "value": "{{fund_id}}"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Funds Retrieved"
+                }
+            ],
+            "docs": "http://docs.faithteams.com/#get-funds"
+        },
+        {
+            "_id": "b2ed9f35-4e37-4765-89cd-1da4dc631681",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "2c7360a8-b66d-4c69-8e4e-cbef73468702",
+            "name": "Unsubscribes",
+            "url": "https://app.faithteams.com/api/v2/unsubscribes?personId={{person_id}}",
+            "method": "GET",
+            "sortNum": 250000,
+            "created": "2023-04-21T12:40:33.824Z",
+            "modified": "2023-08-28T23:06:21.262Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "personId",
+                    "value": "{{person_id}}",
+                    "isPath": false
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Unsubscribe retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "equal",
+                    "value": "null"
+                }
+            ],
+            "preReq": {
+                "runRequests": [
+                    {
+                        "reqId": "170c67bf-0ba0-4792-ac89-2f5a93841b9e",
+                        "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                        "triggerCondition": "run-var-empty",
+                        "triggerValue": "{{person_id}}"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "2256c8f1-8336-4dcf-a2f1-13692b7d6cc6",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "2d864747-9252-4403-a578-7da0625fca15",
+            "name": "Contributions",
+            "url": "https://api-v2.faithteams.com/contributions?startDt=1923-01-01&endDt=2033-01-01",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-21T12:42:02.542Z",
+            "modified": "2023-08-28T15:09:18.579Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "filters",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "personIds",
+                    "value": "769839",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "startDt",
+                    "value": "1923-01-01",
+                    "isPath": false
+                },
+                {
+                    "name": "endDt",
+                    "value": "2033-01-01",
+                    "isPath": false
+                },
+                {
+                    "name": "resultType",
+                    "value": "sum",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "groupBy",
+                    "value": "personId,fundId",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "statuses",
+                    "value": "A",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "500",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "sort",
+                    "value": "dtm",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "sortDirection",
+                    "value": "asc",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[0].contributionId",
+                    "action": "setto",
+                    "value": "{{contribution_id}}"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[0].parentId",
+                    "action": "setto",
+                    "value": "{{contribution_parent_id}}"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Contributions Retrieved"
+                }
+            ]
+        },
+        {
+            "_id": "096be7e6-16c9-4798-ba5d-b50d547ca679",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "2c7360a8-b66d-4c69-8e4e-cbef73468702",
+            "name": "Checkins",
+            "url": "https://app.faithteams.com/api/v2/checkins",
+            "method": "GET",
+            "sortNum": 240000,
+            "created": "2023-04-21T12:46:52.525Z",
+            "modified": "2023-08-28T23:09:01.242Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "personIds",
+                    "value": "769839",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "noloadmask",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Checkins retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "equal",
+                    "value": "[]"
+                }
+            ]
+        },
+        {
+            "_id": "78f63149-b52a-4f8e-9a9b-7bd5daf76ab9",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "20b77f08-bf96-486e-833d-3bb5a9fb8697",
+            "name": "Not Found",
+            "url": "https://app.faithteams.com/api/v2/tags",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-21T12:49:04.868Z",
+            "modified": "2023-08-28T23:10:05.632Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Not Found"
+                }
+            ]
+        },
+        {
+            "_id": "ef5c0199-15a7-4977-bffa-092fe2b224b6",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "6494946f-fb10-4415-922e-5a8cb0a82c5c",
+            "name": "Users",
+            "url": "https://app.faithteams.com/api/v2/users?noloadmask=true",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-21T12:50:08.152Z",
+            "modified": "2023-08-28T22:48:12.232Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "noloadmask",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Users retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[0].userId",
+                    "action": "setto",
+                    "value": "{{user_id}}"
+                }
+            ]
+        },
+        {
+            "_id": "7818e5f1-dddd-4fe1-a835-41de326ca5a5",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "2c7360a8-b66d-4c69-8e4e-cbef73468702",
+            "name": "Rules",
+            "url": "https://app.faithteams.com/api/v2/rules",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-04-21T12:50:49.239Z",
+            "modified": "2023-08-28T23:09:04.739Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Rules retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "equal",
+                    "value": "[]"
+                }
+            ]
+        },
+        {
+            "_id": "a0208e22-db51-47ed-ba43-bb26a786faa2",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f84d04be-9465-4248-80ed-c891631791c9",
+            "name": "Person",
+            "url": "https://app.faithteams.com/api/v2/people/{{person_id}}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-21T12:54:57.381Z",
+            "modified": "2023-08-28T19:09:05.026Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "family",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Person Retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.personId",
+                    "action": "equal",
+                    "value": "{{person_id}}"
+                }
+            ],
+            "preReq": {
+                "runRequests": [
+                    {
+                        "reqId": "170c67bf-0ba0-4792-ac89-2f5a93841b9e",
+                        "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                        "triggerCondition": "run-var-empty",
+                        "triggerValue": "{{person_id}}"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "8a2e9fcc-c494-47a6-97a4-4c2f14a16791",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f84d04be-9465-4248-80ed-c891631791c9",
+            "name": "People Memberships",
+            "url": "https://app.faithteams.com/api/v2/people/memberships",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-04-21T12:57:05.012Z",
+            "modified": "2023-08-28T23:13:21.415Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Memberships retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                }
+            ]
+        },
+        {
+            "_id": "2e7adc7d-a4e6-4aa2-90aa-bab83fa95d00",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f84d04be-9465-4248-80ed-c891631791c9",
+            "name": "Person Tags",
+            "url": "https://app.faithteams.com/api/v2/people/{{person_id}}/tags",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-04-21T12:58:39.609Z",
+            "modified": "2023-08-28T23:14:30.346Z",
+            "headers": [],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Person Tags Retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "equal",
+                    "value": "[]"
+                }
+            ],
+            "preReq": {
+                "runRequests": [
+                    {
+                        "reqId": "170c67bf-0ba0-4792-ac89-2f5a93841b9e",
+                        "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                        "triggerCondition": "run-var-empty",
+                        "triggerValue": "{{person_id}}"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "912434c8-39a1-4a88-8e19-2d74d94b45f0",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "3652ba47-0f64-45e1-9489-177c05ddeb0d",
+            "name": "Tithely Organization",
+            "url": "https://app.faithteams.com/api/v2/orgs/{id}",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-21T13:02:00.267Z",
+            "modified": "2023-08-28T22:58:17.685Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "3425",
+                    "isPath": true
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Organization retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                }
+            ]
+        },
+        {
+            "_id": "ced571ba-faed-43a2-a9b8-4a603318d8f3",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f84d04be-9465-4248-80ed-c891631791c9",
+            "name": "Create Person",
+            "url": "https://app.faithteams.com/api/v2/people",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-21T13:04:22.241Z",
+            "modified": "2023-08-28T19:12:29.434Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"Bart\",\n  \"lastName\": \"Simpson\",\n  \"gender\": \"M\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "201"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Person Created"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.firstName",
+                    "action": "equal",
+                    "value": "Bart"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.lastName",
+                    "action": "equal",
+                    "value": "Simpson"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data.personId",
+                    "action": "setto",
+                    "value": "{{person_id_created}}"
+                }
+            ]
+        },
+        {
+            "_id": "c39ebad9-1446-4054-86de-3501fd13ba5c",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "3652ba47-0f64-45e1-9489-177c05ddeb0d",
+            "name": "Teams",
+            "url": "https://app.faithteams.com/api/v2/teams",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2023-04-21T13:11:43.186Z",
+            "modified": "2023-08-28T22:55:45.753Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Teams retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[0].orgId",
+                    "action": "setto",
+                    "value": "{{organization_id}}"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[0].teamId",
+                    "action": "setto",
+                    "value": "{{team_id}}"
+                }
+            ]
+        },
+        {
+            "_id": "2209bbfc-b372-48ba-bf9a-f38d30785717",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f84d04be-9465-4248-80ed-c891631791c9",
+            "name": "Update Person",
+            "url": "https://app.faithteams.com/api/v2/people/{{person_id_created}}",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-04-21T13:28:22.897Z",
+            "modified": "2023-08-28T19:23:23.839Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"Maggie\",\n  \"lastName\": \"Simpson\",\n  \"status\":\"A\",\n  \"homeEmail\":\"bart@the_simpsons.com\",\n  \"createdDtm\":\"2023-04-21 13:08:51\",\n  \"createdUser\":\"27850\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Person Updated"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.homeEmail",
+                    "action": "equal",
+                    "value": "bart@the_simpsons.com"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.firstName",
+                    "action": "equal",
+                    "value": "Maggie"
+                }
+            ],
+            "docs": "It appears (through trial and error) PUT https://app.faithteams.com/api/v2/people/{id} requires these paramters in addition to the parameter you hope to update:\n- `status`\n- `createdDtm`\n- `createdUser`\n\nIn addition, if you do not include fields like `firstName` or `lastName`, those fields will be set to `null`. Be sure to include all fields that should be retained including those that need to change.",
+            "preReq": {
+                "runRequests": [
+                    {
+                        "reqId": "ced571ba-faed-43a2-a9b8-4a603318d8f3",
+                        "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                        "triggerCondition": "run-always",
+                        "triggerValue": ""
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "b514f26a-9f3a-4468-be7b-3ef6b1885385",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "324f838f-8520-477a-9a1b-4d43fbffbfba",
+            "name": "Fund",
+            "url": "https://api-v2.faithteams.com/funds/{{fund_id}}",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-04-21T13:47:01.333Z",
+            "modified": "2023-08-28T18:52:28.932Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Doggy Fund\",\n  \"description\": \"$ for the pups\",\n  \"status\": \"A\",\n  \"onlineStatus\": \"I\",\n  \"sort\": 0,\n  \"taxDeductible\": \"Y\",\n  \"isDefault\": \"Y\",\n  \"createdDtm\": \"2023-04-17 15:01:26\",\n  \"createdUser\": 27850,\n  \"updatedDtm\": \"2023-04-17 15:21:37\",\n  \"updatedUser\": 27850,\n  \"defaultFund\": true\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Fund Updated"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.fundId",
+                    "action": "equal",
+                    "value": "{{fund_id}}"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.name",
+                    "action": "equal",
+                    "value": "Doggy Fund"
+                }
+            ]
+        },
+        {
+            "_id": "f0e9b7b2-3a22-4835-b980-2750204dfba7",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "324f838f-8520-477a-9a1b-4d43fbffbfba",
+            "name": "Fund",
+            "url": "https://api-v2.faithteams.com/funds",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-21T13:58:56.165Z",
+            "modified": "2023-08-28T18:51:06.651Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fundId\":-1,\n  \"name\":\"Cat Fund\",\n  \"description\":\"$$ for kitties\",\n  \"status\":\"A\",\n  \"onlineStatus\":\"I\",\n  \"taxDeductible\":\"Y\",\n  \"isDefault\":\"N\",\n  \"sort\":1,\n  \"showInternally\":true,\n  \"showExternally\":false\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "201"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Fund Created"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.name",
+                    "action": "equal",
+                    "value": "Cat Fund"
+                }
+            ]
+        },
+        {
+            "_id": "7c537cf4-e095-457b-a328-9838eca26bfc",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f4e606e9-84b5-44d8-a8f8-96b30d60706e",
+            "name": "Contribution Types",
+            "url": "https://api-v2.faithteams.com/contributiontypes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-21T14:04:51.660Z",
+            "modified": "2023-08-17T14:47:48.285Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.success",
+                    "action": "equal",
+                    "value": "true"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Contribution Types Retrieved"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[0].contributionTypeId",
+                    "action": "setto",
+                    "value": "{{contribution_type_id}}"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.authenticated",
+                    "action": "equal",
+                    "value": "true"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.authorized",
+                    "action": "equal",
+                    "value": "true"
+                }
+            ],
+            "docs": "http://docs.faithteams.com/#contribution-types"
+        },
+        {
+            "_id": "d6671609-52ff-4179-8ecd-e90f3badd920",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f04b0b43-e115-4e4b-9d2c-e0a035d63476",
+            "name": "Batch",
+            "url": "https://api-v2.faithteams.com/batches/{{batch_id}}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-21T14:10:26.704Z",
+            "modified": "2023-08-28T14:45:27.231Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Batch Retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.contributions | length",
+                    "action": ">=",
+                    "value": "1"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.batchId",
+                    "action": "equal",
+                    "value": "{{batch_id}}"
+                }
+            ],
+            "preReq": {
+                "runRequests": [
+                    {
+                        "reqId": "a9d1efd5-a23f-4a6b-895d-9326b5b2377b",
+                        "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                        "triggerCondition": "run-var-empty",
+                        "triggerValue": "{{batch_id}}"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "b5094214-d033-4b25-bb3e-7dfe4ad78e04",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "2d864747-9252-4403-a578-7da0625fca15",
+            "name": "Contribution",
+            "url": "https://api-v2.faithteams.com/contributions/{{contribution_parent_id}}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-21T14:11:59.141Z",
+            "modified": "2023-08-28T15:09:29.948Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data | length",
+                    "action": ">=",
+                    "value": "2"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data[0].parentId",
+                    "action": "equal",
+                    "value": "{{contribution_parent_id}}"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data[0].contributionId",
+                    "action": "equal",
+                    "value": "{{contribution_parent_id}}"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Contribution Retrieved"
+                }
+            ],
+            "preReq": {
+                "runRequests": [
+                    {
+                        "reqId": "2256c8f1-8336-4dcf-a2f1-13692b7d6cc6",
+                        "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                        "triggerCondition": "run-var-empty",
+                        "triggerValue": "{{contribution_parent_id}}"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "75225a9b-07ec-444d-8630-78cc3a34dde4",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "2d864747-9252-4403-a578-7da0625fca15",
+            "name": "Contribution",
+            "url": "https://api-v2.faithteams.com/contributions",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-21T14:15:39.123Z",
+            "modified": "2023-08-28T15:10:50.763Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"recordType\":\"H\",\n    \"personId\":779137,\n    \"batchId\":195770,\n    \"amount\":\"100.00\",\n    \"fee\":\"2.00\",\n    \"netAmount\":\"98.00\",\n    \"contributionTypeId\":24,\n    \"status\":\"A\",\n    \"note\":\"Date: 2023-07-17, Method: card, Memo: for the animals\"\n  },\n  {\n    \"recordType\":\"D\",\n    \"fundId\":7894,\n    \"personId\":779137,\n    \"batchId\":195770,\n    \"amount\":\"100.00\",\n    \"fee\":\"2.00\",\n    \"netAmount\":\"98.00\"\n  }\n]",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "201"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Contribution Created"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data | length",
+                    "action": "equal",
+                    "value": "2"
+                }
+            ],
+            "docs": "POST https://api-v2.faithteams.com/contributions appears to be used for updating _and_ creating contributions."
+        },
+        {
+            "_id": "a9d1efd5-a23f-4a6b-895d-9326b5b2377b",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f04b0b43-e115-4e4b-9d2c-e0a035d63476",
+            "name": "Batches",
+            "url": "https://api-v2.faithteams.com/batches?sort=dtm&sortDirection=desc&dtm=2023-08-28",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-21T14:29:31.202Z",
+            "modified": "2023-08-30T21:46:55.443Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "sort",
+                    "value": "batchId",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "sort",
+                    "value": "dtm",
+                    "isPath": false
+                },
+                {
+                    "name": "sort",
+                    "value": "updatedDtm",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "sortDirection",
+                    "value": "desc",
+                    "isPath": false
+                },
+                {
+                    "name": "status",
+                    "value": "O",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "dtm",
+                    "value": "2023-08-28",
+                    "isPath": false
+                },
+                {
+                    "name": "title",
+                    "value": "2023-08-28 Central Campus Tithely Card",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "description",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "start",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "batchIds",
+                    "value": "200782",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "status",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Batches Retrieved"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[0].batchId",
+                    "action": "setto",
+                    "value": "{{batch_id}}"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data[1].batchId",
+                    "action": "setto",
+                    "value": "{{batch_id_2}}"
+                }
+            ],
+            "docs": "http://docs.faithteams.com/#get-batches"
+        },
+        {
+            "_id": "db9b5b7e-5f30-4b5f-bb01-aac75f0cf496",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f04b0b43-e115-4e4b-9d2c-e0a035d63476",
+            "name": "Batch Totals",
+            "url": "https://api-v2.faithteams.com/batches/totals?batchIds={{batch_id}},{{batch_id_2}}",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-04-21T14:40:00.343Z",
+            "modified": "2023-08-28T15:13:27.571Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "batchIds",
+                    "value": "{{batch_id}},{{batch_id_2}}",
+                    "isPath": false
+                }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Batch Retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "array"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data[0].batchId",
+                    "action": "istype",
+                    "value": "number"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data[0].amount",
+                    "action": "istype",
+                    "value": "number"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data[0].netAmount",
+                    "action": "istype",
+                    "value": "number"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data[0].fee",
+                    "action": "istype",
+                    "value": "number"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Batch Retrieved"
+                }
+            ]
+        },
+        {
+            "_id": "e5ffaf13-51d6-4df9-974c-81efa2747448",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f04b0b43-e115-4e4b-9d2c-e0a035d63476",
+            "name": "Batch",
+            "url": "https://api-v2.faithteams.com/batches",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-21T14:43:38.269Z",
+            "modified": "2023-08-28T14:46:17.540Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Tithely 2023-07-19 Bank\",\n  \"dtm\":\"2023-07-19 00:00:00\",\n  \"status\":\"O\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "201"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Batch Created"
+                }
+            ],
+            "docs": "POST https://api-v2.faithteams.com/batches has the following required fields:\n- `title`\n- `dtm`\n- `status` = \"O\" (for open)"
+        },
+        {
+            "_id": "7cf80f4f-94a6-41b8-b81e-a55374cf5118",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "2c7360a8-b66d-4c69-8e4e-cbef73468702",
+            "name": "Authenticate",
+            "url": "https://app.faithteams.com/api/v2/authenticate",
+            "method": "POST",
+            "sortNum": 270000,
+            "created": "2023-05-19T21:45:33.401Z",
+            "modified": "2023-08-17T20:50:54.044Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Basic: {{user_credentials | btoa}}"
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data.token",
+                    "action": "setto",
+                    "value": "{{auth_token}}"
+                },
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.success",
+                    "action": "equal",
+                    "value": "true"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Authenticated"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.userId",
+                    "action": "equal",
+                    "value": "{{user_id}}"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.type",
+                    "action": "equal",
+                    "value": "USER"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.token | length",
+                    "action": "equal",
+                    "value": "66"
+                }
+            ]
+        },
+        {
+            "_id": "5c5db74e-34f5-4488-93b4-12e3974de3ca",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f4e606e9-84b5-44d8-a8f8-96b30d60706e",
+            "name": "Contribution Type",
+            "url": "https://api-v2.faithteams.com/contributiontypes/{{contribution_type_id}}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-17T14:42:38.549Z",
+            "modified": "2023-08-28T15:12:53.407Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.contributionTypeId",
+                    "action": "equal",
+                    "value": "{{contribution_type_id}}"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Contribution Type Retrieved"
+                }
+            ],
+            "docs": "http://docs.faithteams.com/#contribution-types",
+            "preReq": {
+                "runRequests": [
+                    {
+                        "reqId": "7c537cf4-e095-457b-a328-9838eca26bfc",
+                        "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                        "triggerCondition": "run-var-empty",
+                        "triggerValue": "{{contribution_type_id}}"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "7dfa1e98-d987-4d0c-9763-44063eb31050",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "e1d78a16-8cfe-49e1-8443-f5a5567bf968",
+            "name": "Not Found",
+            "url": "https://api-v2.faithteams.com/contributiontypes/9999999",
+            "method": "GET",
+            "sortNum": 270000,
+            "created": "2023-08-17T14:51:09.935Z",
+            "modified": "2023-08-17T14:53:52.136Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "404"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.success",
+                    "action": "equal",
+                    "value": "false"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Not Found"
+                }
+            ]
+        },
+        {
+            "_id": "0cdf7e79-1bc0-4460-ab23-b84197fa5621",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "e1d78a16-8cfe-49e1-8443-f5a5567bf968",
+            "name": "Integer Too Big",
+            "url": "https://api-v2.faithteams.com/contributiontypes/9999999999999",
+            "method": "GET",
+            "sortNum": 280000,
+            "created": "2023-08-17T14:52:16.958Z",
+            "modified": "2023-08-17T14:53:26.174Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.success",
+                    "action": "equal",
+                    "value": "false"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Error: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"9999999999999\""
+                }
+            ]
+        },
+        {
+            "_id": "139f110b-99cc-41e8-9016-d38ec3cd2ec3",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "324f838f-8520-477a-9a1b-4d43fbffbfba",
+            "name": "Fund",
+            "url": "https://api-v2.faithteams.com/funds/{{fund_id}}",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-08-28T15:14:46.204Z",
+            "modified": "2023-08-28T15:15:23.390Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "set-env-var",
+                    "custom": "json.data.fundId",
+                    "action": "setto",
+                    "value": "{{fund_id}}"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Fund Retrieved"
+                }
+            ],
+            "docs": "http://docs.faithteams.com/#get-funds"
+        },
+        {
+            "_id": "314853cd-efe0-4480-97c6-acc92a10ff41",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "6494946f-fb10-4415-922e-5a8cb0a82c5c",
+            "name": "User",
+            "url": "https://app.faithteams.com/api/v2/users/{{user_id}}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-28T22:46:23.036Z",
+            "modified": "2023-08-28T22:49:54.020Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "User retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.userId",
+                    "action": "equal",
+                    "value": "{{user_id}}"
+                }
+            ],
+            "preReq": {
+                "runRequests": [
+                    {
+                        "reqId": "ef5c0199-15a7-4977-bffa-092fe2b224b6",
+                        "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                        "triggerCondition": "run-var-empty",
+                        "triggerValue": "{{user_id}}"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "2f415c71-21d5-49f4-a469-a07ccbf8d0bf",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "3652ba47-0f64-45e1-9489-177c05ddeb0d",
+            "name": "Organization",
+            "url": "https://app.faithteams.com/api/v2/orgs/{{organization_id}}",
+            "method": "GET",
+            "sortNum": 7500,
+            "created": "2023-08-28T22:58:58.173Z",
+            "modified": "2023-08-28T22:59:38.254Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Organization retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.orgId",
+                    "action": "equal",
+                    "value": "{{organization_id}}"
+                }
+            ]
+        },
+        {
+            "_id": "4b34e157-a886-4430-bdc1-97aa5904a078",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "20b77f08-bf96-486e-833d-3bb5a9fb8697",
+            "name": "Not Found 2",
+            "url": "https://app.faithteams.com/api/v2/people/memberships/10",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-28T23:12:23.517Z",
+            "modified": "2023-08-28T23:15:03.684Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "404"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.status",
+                    "action": "equal",
+                    "value": "404"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.error",
+                    "action": "equal",
+                    "value": "Not Found"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "No message available"
+                }
+            ]
+        },
+        {
+            "_id": "58a864e2-84b5-4193-a247-2de257b3f36c",
+            "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+            "containerId": "f04b0b43-e115-4e4b-9d2c-e0a035d63476",
+            "name": "Batch Copy",
+            "url": "https://api-v2.faithteams.com/batches/204324",
+            "method": "PUT",
+            "sortNum": 25000,
+            "created": "2023-08-29T11:42:49.897Z",
+            "modified": "2023-08-29T11:43:44.825Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"orgId\": 3425,\n    \"status\": \"D\",\n    \"title\": \"Tithely 2023-07-19 Bank\",\n    \"dtm\": \"2023-07-19 00:00:00\",\n    \"updatedDtm\": \"2023-08-28 23:45:44\",\n    \"updatedUser\": 27985,\n    \"contributions\": []\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data",
+                    "action": "istype",
+                    "value": "object"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.message",
+                    "action": "equal",
+                    "value": "Batch Retrieved"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.contributions | length",
+                    "action": ">=",
+                    "value": "1"
+                },
+                {
+                    "type": "json-query",
+                    "custom": "json.data.batchId",
+                    "action": "equal",
+                    "value": "{{batch_id}}"
+                }
+            ],
+            "preReq": {
+                "runRequests": [
+                    {
+                        "reqId": "a9d1efd5-a23f-4a6b-895d-9326b5b2377b",
+                        "colId": "a25f2f0c-6c1e-4843-90c0-bff60ee5da19",
+                        "triggerCondition": "run-var-empty",
+                        "triggerValue": "{{batch_id}}"
+                    }
+                ]
+            }
+        }
+    ]
+}

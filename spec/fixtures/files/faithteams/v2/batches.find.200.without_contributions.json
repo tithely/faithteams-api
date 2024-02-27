@@ -1,0 +1,16 @@
+{
+    "success": true,
+    "message": "Batch Retrieved",
+    "data": {
+        "batchId": 183100,
+        "orgId": 3409,
+        "status": "O",
+        "title": "Tithely 2023-04-16 Card",
+        "dtm": "2023-04-16 00:00:00",
+        "updatedDtm": "2023-04-24 17:31:31",
+        "updatedUser": 27850,
+        "contributions": []
+    },
+    "authenticated": true,
+    "authorized": true
+}

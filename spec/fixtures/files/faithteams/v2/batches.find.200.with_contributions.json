@@ -1,0 +1,60 @@
+{
+    "success": true,
+    "message": "Batch Retrieved",
+    "data": {
+        "batchId": 183100,
+        "orgId": 3409,
+        "status": "O",
+        "title": "Tithely 2023-04-16 Card",
+        "dtm": "2023-04-16 00:00:00",
+        "updatedDtm": "2023-04-24 17:31:31",
+        "updatedUser": 27850,
+        "contributions": [
+            {
+                "contributionId": 4296848,
+                "parentId": 4296848,
+                "recordType": "H",
+                "personId": 769839,
+                "personId2": -98,
+                "batchId": 183100,
+                "sortIndex": 0,
+                "amount": 20.00,
+                "fee": 0.00,
+                "netAmount": 20.00,
+                "contributionTypeId": 24,
+                "fundId": 0,
+                "checkNumber": "",
+                "status": "A",
+                "note": "have fun... son!",
+                "createdDtm": "2023-04-24 19:00:36",
+                "createdUser": 27850,
+                "updatedDtm": "2023-04-24 19:00:36",
+                "updatedUser": 27850,
+                "giveDtm": "2023-04-16 00:00:00"
+            },
+            {
+                "contributionId": 4296849,
+                "parentId": 4296848,
+                "recordType": "D",
+                "personId": 769839,
+                "personId2": -98,
+                "batchId": 183100,
+                "sortIndex": 1,
+                "amount": 20.00,
+                "fee": 0.00,
+                "netAmount": 20.00,
+                "contributionTypeId": 24,
+                "fundId": 7873,
+                "status": "A",
+                "note": "have fun... son!",
+                "createdDtm": "2023-04-24 19:00:36",
+                "createdUser": 27850,
+                "updatedDtm": "2023-04-24 19:00:36",
+                "updatedUser": 27850,
+                "giveDtm": "2023-04-16 00:00:00"
+            }
+        ]
+    },
+    "authenticated": true,
+    "authorized": true
+}

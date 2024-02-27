@@ -1,0 +1,18 @@
+{
+    "success": true,
+    "message": "Contribution Type Retrieved",
+    "data": {
+        "contributionTypeId": 8004,
+        "orgId": 3425,
+        "name": "Cash",
+        "description": "Cash",
+        "status": "A",
+        "type": "I",
+        "createdDtm": "2023-04-25 11:59:40",
+        "createdUser": 0,
+        "updatedDtm": "2023-04-25 11:59:40",
+        "updatedUser": 0
+    },
+    "authenticated": true,
+    "authorized": true
+}

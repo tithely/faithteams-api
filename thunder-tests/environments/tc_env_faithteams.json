@@ -1,0 +1,59 @@
+{
+    "_id": "ca95294a-a9fa-4de5-9a20-e0cbe4c69aec",
+    "name": "FaithTeams",
+    "default": false,
+    "sortNum": 50000,
+    "created": "2023-04-21T12:11:00.290Z",
+    "modified": "2023-04-21T12:11:00.290Z",
+    "data": [
+        {
+            "name": "auth_token",
+            "value": "3yQ2PLSF4SjabyidmfjmoHEabv8d7kQBartNc0qZu8j8TeGE4LnQnE9L2eV7l3SOW"
+        },
+        {
+            "name": "contribution_type_id",
+            "value": "8004"
+        },
+        {
+            "name": "contribution_id",
+            "value": "4373972"
+        },
+        {
+            "name": "contribution_parent_id",
+            "value": "4373971"
+        },
+        {
+            "name": "batch_id",
+            "value": "204480"
+        },
+        {
+            "name": "batch_id_2",
+            "value": "204482"
+        },
+        {
+            "name": "fund_id",
+            "value": "7895"
+        },
+        {
+            "name": "person_id",
+            "value": "815172"
+        },
+        {
+            "name": "person_id_created",
+            "value": "815320"
+        },
+        {
+            "name": "organization_id",
+            "value": "3425"
+        },
+        {
+            "name": "team_id",
+            "value": "7257"
+        },
+        {
+            "name": "user_id",
+            "value": "tithely-1@mg.faithteams.com"
+        }
+    ],
+    "envFile": "faithteams.env"
+}

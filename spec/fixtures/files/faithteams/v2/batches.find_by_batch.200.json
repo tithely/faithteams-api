@@ -1,0 +1,17 @@
+{
+    "success": true,
+    "message": "Batches Retrieved",
+    "data": [
+        {
+            "batchId": 200761,
+            "orgId": 3425,
+            "status": "O",
+            "title": "2023-08-23 Central Campus Tithely Card",
+            "dtm": "2023-08-23 00:00:00",
+            "updatedDtm": "2023-08-24 13:04:29",
+            "updatedUser": 27985
+        }
+    ],
+    "authenticated": true,
+    "authorized": true
+}

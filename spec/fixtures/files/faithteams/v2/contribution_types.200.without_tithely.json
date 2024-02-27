@@ -1,0 +1,56 @@
+{
+    "success": true,
+    "message": "Contribution Types Retrieved",
+    "data": [
+        {
+            "contributionTypeId": 7971,
+            "orgId": 3409,
+            "name": "Cash",
+            "description": "Cash",
+            "status": "A",
+            "type": "I",
+            "createdDtm": "2023-04-17 14:24:35",
+            "createdUser": 0,
+            "updatedDtm": "2023-04-17 14:24:35",
+            "updatedUser": 0
+        },
+        {
+            "contributionTypeId": 7972,
+            "orgId": 3409,
+            "name": "Check",
+            "description": "Check",
+            "status": "A",
+            "type": "I",
+            "createdDtm": "2023-04-17 14:24:35",
+            "createdUser": 0,
+            "updatedDtm": "2023-04-17 14:24:35",
+            "updatedUser": 0
+        },
+        {
+            "contributionTypeId": 701,
+            "orgId": 0,
+            "name": "Faith Teams",
+            "description": "Faith Teams",
+            "status": "A",
+            "type": "O",
+            "createdDtm": "2017-05-10 22:39:24",
+            "createdUser": 0,
+            "updatedDtm": "2017-05-10 22:39:24",
+            "updatedUser": 0
+        },
+        {
+            "contributionTypeId": 96,
+            "orgId": 0,
+            "name": "Stripe",
+            "description": "Stripe",
+            "status": "A",
+            "type": "O",
+            "createdDtm": "2017-05-10 22:39:24",
+            "createdUser": 0,
+            "updatedDtm": "2017-05-10 22:39:24",
+            "updatedUser": 0
+        }
+    ],
+    "authenticated": true,
+    "authorized": true
+}

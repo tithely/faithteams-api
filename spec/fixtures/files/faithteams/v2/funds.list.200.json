@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "message": "Funds Retrieved",
+    "data": [
+        {
+            "fundId": 7833,
+            "orgId": 3409,
+            "name": "Doggy Fund",
+            "description": "$ for the pups",
+            "status": "A",
+            "onlineStatus": "I",
+            "sort": 0,
+            "taxDeductible": "Y",
+            "isDefault": "Y",
+            "createdDtm": "2023-04-17 15:01:26",
+            "createdUser": 27850,
+            "updatedDtm": "2023-04-21 13:57:11",
+            "updatedUser": 27850
+        },
+        {
+            "fundId": 7861,
+            "orgId": 3409,
+            "name": "Party Fund",
+            "description": "$$ for parties",
+            "status": "A",
+            "onlineStatus": "I",
+            "sort": 1,
+            "taxDeductible": "Y",
+            "isDefault": "N",
+            "createdDtm": "2023-04-21 13:59:01",
+            "createdUser": 27850,
+            "updatedDtm": "2023-04-21 13:59:01",
+            "updatedUser": 27850
+        },
+        {
+            "fundId": 7862,
+            "orgId": 3409,
+            "name": "Cat Fund",
+            "description": "$$ for kitties",
+            "status": "A",
+            "onlineStatus": "I",
+            "sort": 1,
+            "taxDeductible": "Y",
+            "isDefault": "N",
+            "createdDtm": "2023-04-21 14:01:52",
+            "createdUser": 27850,
+            "updatedDtm": "2023-04-21 14:01:52",
+            "updatedUser": 27850
+        }
+    ],
+    "authenticated": true,
+    "authorized": true
+}

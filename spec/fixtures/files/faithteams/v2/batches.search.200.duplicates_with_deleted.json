@@ -1,0 +1,46 @@
+{
+    "success": true,
+    "message": "Batches Retrieved",
+    "data": [
+        {
+            "batchId": 200782,
+            "orgId": 3425,
+            "status": "D",
+            "title": "2023-08-23 Central Campus Tithely Card",
+            "dtm": "2023-08-23 00:00:00",
+            "updatedDtm": "2023-08-24 13:55:55",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 196734,
+            "orgId": 3425,
+            "status": "O",
+            "serviceId": 0,
+            "title": "2023-07-26 Tithely",
+            "info": "",
+            "dtm": "2023-07-26 00:00:00",
+            "updatedDtm": "2023-07-27 11:56:19",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 196634,
+            "orgId": 3425,
+            "status": "D",
+            "title": "2023-07-26 Tithely",
+            "dtm": "2023-07-26 00:00:00",
+            "updatedDtm": "2023-07-26 13:28:59",
+            "updatedUser": 27985
+        },
+        {
+            "batchId": 200761,
+            "orgId": 3425,
+            "status": "O",
+            "title": "2023-08-23 Central Campus Tithely Card",
+            "dtm": "2023-08-23 00:00:00",
+            "updatedDtm": "2023-08-24 13:04:29",
+            "updatedUser": 27985
+        }
+    ],
+    "authenticated": true,
+    "authorized": true
+}

@@ -1,0 +1,17 @@
+# Pulls in multiple workflows into a single file for use with PRs.
+name: Puller
+
+on:
+  pull_request:
+    types: [ opened, reopened, synchronize ]
+  workflow_dispatch:
+
+jobs:
+  tester:
+    uses: tithely/gem-workflows/.github/workflows/tester.yml@master
+  editorconfig:
+    uses: tithely/gem-workflows/.github/workflows/editorconfig.yml@master
+  rubocop:
+    uses: tithely/gem-workflows/.github/workflows/rubocop.yml@master
+  yard:
+    uses: tithely/gem-workflows/.github/workflows/yard.yml@master

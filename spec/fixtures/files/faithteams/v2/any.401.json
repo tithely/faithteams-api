@@ -1,0 +1,6 @@
+{
+    "success": false,
+    "message": "Unauthorized",
+    "authenticated": false,
+    "data": null
+}
