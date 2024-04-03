@@ -60,9 +60,7 @@ Use the Thunder Client extension for VS Code to test/inspect API calls.
 
 General instructions for publishing a gem are available in this [RubyGems guide](https://guides.rubygems.org/publishing/#publishing-to-rubygemsorg).
 
-1. Make sure you have a [RubyGems account](https://rubygems.org/sign_in).
-1. Ensure the gem can be built and is at the correct version number: `bundle exec rake install`
-1. Publish the gem `gem push pkg/faithteams-api-2.0.1.gem`
+Once a gem is ready to be published, a release can be made and [the GitHub Action](https://guides.rubygems.org/trusted-publishing/releasing-gems/) [rubygems.yml](./.github/workflows/rubygems.yml) will publish the gem to RubyGems.
 
 ## License
 

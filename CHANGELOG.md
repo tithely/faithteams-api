@@ -7,6 +7,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.2] - 2024-04-03
+
+### Fixed
+
+1. Fixed gemspec metadata urls. (IN-2229)
+1. Update gem dependencies.
+1. Replace `jeweler.yml` Github Action with `rubygems.yml`.
+
 ## [2.0.1] - 2024-04-03
 
 ### Changed
