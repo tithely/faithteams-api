@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    faithteams-api (2.0.0)
+    faithteams-api (2.0.1)
       activesupport (>= 6.1.7)
       http (~> 5.1)
 
