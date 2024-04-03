@@ -1,0 +1,22 @@
+name: EditorConfig
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install editorconfig-checker
+        run: npm install --global editorconfig-checker
+      - name: Run editorconfig-checker
+        run: |
+          editorconfig-checker -verbose -exclude "(thunder-tests|Gemfile.lock|.csv)"
