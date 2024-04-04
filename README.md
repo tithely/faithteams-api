@@ -56,6 +56,12 @@ To run a specific test, use a pattern: `bundle exec rspec -P "**/contribution_sp
 
 Use the Thunder Client extension for VS Code to test/inspect API calls.
 
+## Gem Publishing
+
+General instructions for publishing a gem are available in this [RubyGems guide](https://guides.rubygems.org/publishing/#publishing-to-rubygemsorg).
+
+Once a gem is ready to be published, a release can be made and [the GitHub Action](https://guides.rubygems.org/trusted-publishing/releasing-gems/) [rubygems.yml](./.github/workflows/rubygems.yml) will publish the gem to RubyGems.
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
