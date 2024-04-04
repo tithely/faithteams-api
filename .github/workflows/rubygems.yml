@@ -2,11 +2,18 @@
 name: RubyGems
 
 on:
-  release:
-    types: [ published ]
+  pull_request:
+    # Only on the production branch
+    branches:
+      - production
+    # Only when closed
+    types:
+      - closed
+  workflow_dispatch:
 
 jobs:
   push:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     permissions:
