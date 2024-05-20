@@ -9,10 +9,6 @@ module Support
         read_fixture(name: "any.#{status}.json")
       end
 
-      def authenticate_json(status:)
-        read_fixture(name: "authenticate.#{status}.json")
-      end
-
       def batches_json(status: 200, method: nil, description: nil)
         name_json(resource: "batches", status: status, method: method, description: description)
       end
@@ -40,7 +36,6 @@ module Support
 
       def endpoint_base_urls
         {
-          "authenticate" => "https://app.faithteams.com/api/v2",
           "batches" => "https://api-v2.faithteams.com",
           "contributions" => "https://api-v2.faithteams.com",
           "contributiontypes" => "https://api-v2.faithteams.com",
@@ -61,10 +56,6 @@ module Support
 
       def people_json(status: 200, method: nil, description: nil)
         name_json(resource: "people", status: status, method: method, description: description)
-      end
-
-      def stub_authenticate(status: 200, body: nil)
-        stub_faithteams_request(method: :post, path: "/authenticate", params: {}, body: body || authenticate_json(status: status), status: status)
       end
 
       def stub_batches_create(status: 201, body: nil, method: "create", description: nil)

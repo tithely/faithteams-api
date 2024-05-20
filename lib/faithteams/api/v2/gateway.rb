@@ -32,11 +32,6 @@ module FaithTeams
           @contribution ||= Resource::Contribution.new(connection: connection)
         end
 
-        # @return [Resource::User]
-        def user
-          @user ||= Resource::User.new(connection: connection)
-        end
-
         # @return [Resource::ContributionType]
         def contribution_type
           @contribution_type ||= Resource::ContributionType.new(connection: connection)
