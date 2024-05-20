@@ -10,7 +10,6 @@ module FaithTeams
       class Connection
         # Specific base urls for different resources
         ENDPOINT_BASE_URLS = {
-          "authenticate" => "https://app.faithteams.com/api/v2",
           "batches" => "https://api-v2.faithteams.com",
           "contributions" => "https://api-v2.faithteams.com",
           "contributiontypes" => "https://api-v2.faithteams.com",
@@ -77,8 +76,6 @@ module FaithTeams
               response = http.get(url, params: params)
             end
             break if response.status != 401 || retries >= 2
-
-            authenticate
           end
 
           raise Error::Request.new(response: response, message: "Request unsuccessful (#{response.status})") unless response.status.success?
@@ -116,25 +113,13 @@ module FaithTeams
 
         # @return [HTTP::Client]
         def http
-          @http ||= HTTP.headers("Token" => "#{auth_token}")
+          @http ||= HTTP.basic_auth(user: user_id, pass: password)
         end
 
         # @param path [String]
         # @return [String]
         def base_url(path:)
           ENDPOINT_BASE_URLS[path.split("/")[1]]
-        end
-
-        # Set the auth_token for these requests
-        # @return [String]
-        def auth_token
-          @auth_token ||= user_resource.authenticate
-        end
-
-        # Resets existing auth_token and re-authenticates
-        def authenticate
-          @auth_token = nil
-          auth_token
         end
       end
     end

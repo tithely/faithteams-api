@@ -7,7 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.2] - 2024-04-03
+## [3.0.0] - 2024-05-20 -
+
+### Fixed
+
+1. Use basic auth for all API requests and remove User. (IN-2429)
+
+### Removed
+
+1. Remove `Resource::User` and `Resource::User#authenticate`. (IN-2429)
+
+## [2.0.2] - 2024-04-04 - https://github.com/tithely/faithteams-api/pull/5
 
 ### Fixed
 
