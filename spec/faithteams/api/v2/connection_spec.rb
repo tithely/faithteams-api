@@ -29,7 +29,6 @@ RSpec.describe FaithTeams::API::V2::Connection, :stubs, type: :model do
 
     it "is false if connection is not valid" do
       stub_contribution_types(status: 401, body: any_json(status: 401))
-      stub_authenticate(status: 401, body: any_json(status: 401))
       expect(connection.valid?).to be(false)
     end
   end
@@ -118,37 +117,22 @@ RSpec.describe FaithTeams::API::V2::Connection, :stubs, type: :model do
 
   describe "request" do
     context "when successful" do
-      before do
-        stub_authenticate
-      end
-
       it "returns HTTP::Response" do
         stub_funds
         expect(connection.request(path: "/funds")).to be_a(HTTP::Response)
       end
     end
 
-    context "when authentication fails on non-authenticate request" do
+    context "when failure" do
       before do
         stub_funds(status: 401, body: any_json(status: 401))
-        stub_authenticate
       end
 
       it "will raise unathenticated error after multiple attempts" do
-        expect(connection.user_resource).to receive(:authenticate).exactly(2).times.and_call_original
-
         expect { connection.request(path: "/funds") }.to raise_error(FaithTeams::API::V2::Error::Request, "Request unsuccessful (401 Unauthorized): Unauthorized")
-      end
-    end
-
-    context "when authentication fails on authenticate request" do
-      before do
-        stub_authenticate(status: 401, body: any_json(status: 401))
       end
 
       it "will raise unathenticated error immediately" do
-        expect(connection.user_resource).to receive(:authenticate).once.and_call_original
-
         expect { connection.request(path: "/funds") }.to raise_error(FaithTeams::API::V2::Error::Request, "Request unsuccessful (401 Unauthorized): Unauthorized")
       end
     end
@@ -156,7 +140,6 @@ RSpec.describe FaithTeams::API::V2::Connection, :stubs, type: :model do
     context "when not successful" do
       before do
         stub_funds(status: 511, body: "")
-        stub_authenticate
       end
 
       it "raises Error::Request" do
@@ -185,7 +168,6 @@ RSpec.describe FaithTeams::API::V2::Connection, :stubs, type: :model do
 
     context "not successful" do
       it "raises error if response is not 200" do
-        stub_authenticate
         stub_funds(status: 500, body: any_json(status: 500))
         expect { connection.request_and_parse(path: "/funds") }.to raise_error(FaithTeams::API::V2::Error::Request, "Request unsuccessful (500 Internal Server Error): Internal Server Error")
       end
@@ -207,7 +189,6 @@ RSpec.describe FaithTeams::API::V2::Connection, :stubs, type: :model do
 
       context "200 status but success = false" do
         it "raises Error::Request" do
-          stub_authenticate
           stub_contributions_find(parent_id: 30, description: "error")
           expect { connection.request_and_parse(path: "/contributions/30") }.to raise_error(FaithTeams::API::V2::Error::Request, "Request unsuccessful: Error: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: '429955534343434'")
         end

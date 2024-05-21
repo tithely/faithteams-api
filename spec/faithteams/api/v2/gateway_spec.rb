@@ -34,12 +34,6 @@ RSpec.describe FaithTeams::API::V2::Gateway, type: :model do
     end
   end
 
-  describe "user" do
-    it "is a Resource::User" do
-      expect(gateway.user).to be_instance_of(FaithTeams::API::V2::Resource::User)
-    end
-  end
-
   describe "contribution_type" do
     it "is a Resource::ContributionType" do
       expect(gateway.contribution_type).to be_instance_of(FaithTeams::API::V2::Resource::ContributionType)
