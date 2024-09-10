@@ -34,6 +34,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "activesupport", ">= 6.1.7"
   spec.add_dependency "http", "~> 5.1"
+  spec.add_dependency "rexml", "~> 3.3.6" # only needs to be specified to address security warning
 
   spec.add_development_dependency "byebug", "~> 11.1"
   spec.add_development_dependency "guard-rspec", "~> 4.7"
