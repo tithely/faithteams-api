@@ -4,6 +4,8 @@ PATH
     faithteams-api (4.0.0)
       activesupport (~> 7.0.8)
       http (~> 5.1)
+      logger (~> 1.6.1)
+      ostruct (~> 0.6.0)
       rexml (~> 3.3.6)
 
 GEM
@@ -67,6 +69,7 @@ GEM
     llhttp-ffi (0.5.0)
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
+    logger (1.6.1)
     lumberjack (1.2.10)
     method_source (1.0.0)
     minitest (5.22.3)
@@ -74,6 +77,7 @@ GEM
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    ostruct (0.6.0)
     parallel (1.24.0)
     parser (3.3.0.5)
       ast (~> 2.4.1)
