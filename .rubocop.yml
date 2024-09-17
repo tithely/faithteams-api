@@ -65,6 +65,8 @@ Layout/EmptyLinesAroundModuleBody:
 # Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
 Style/HashSyntax:
   Enabled: true
+  EnforcedStyle: ruby19
+  EnforcedShorthandSyntax: never # Ruby 3.1 allows omission of value name, but we want to support prior Ruby versions
 
 Layout/FirstArgumentIndentation:
   Enabled: true
