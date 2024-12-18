@@ -32,8 +32,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "activesupport", ">= 6.1.7"
+  spec.add_dependency "activesupport", "~> 7.0.8"
   spec.add_dependency "http", "~> 5.1"
+  spec.add_dependency "logger", "~> 1.6.1"
+  spec.add_dependency "ostruct", "~> 0.6.0"
   spec.add_dependency "rexml", "~> 3.3.6" # only needs to be specified to address security warning
 
   spec.add_development_dependency "byebug", "~> 11.1"
