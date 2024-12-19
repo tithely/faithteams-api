@@ -11,6 +11,11 @@ module FaithTeams
             read_attribute(:isDefault).presence
           end
 
+          # @return [Boolean]
+          def default?
+            default == "Y"
+          end
+
           # @return [String, nil]
           def description
             read_attribute(:description).presence
@@ -39,6 +44,11 @@ module FaithTeams
           # @return [String, nil] "A" for active, "I" for inactive
           def status
             read_attribute(:status).presence
+          end
+
+          # @return [Boolean]
+          def active?
+            status == "A"
           end
 
           # @return [String, nil] "T" for true?, "Y" for yes?
