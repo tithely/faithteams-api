@@ -2,5 +2,5 @@
 
 module FaithTeams
   # Current version number.
-  VERSION = "3.0.1"
+  VERSION = "4.1.1"
 end

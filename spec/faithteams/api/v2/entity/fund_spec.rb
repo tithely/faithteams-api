@@ -22,6 +22,21 @@ RSpec.describe FaithTeams::API::V2::Entity::Fund, type: :model do
     end
   end
 
+  describe "#default?" do
+    context "when default is 'Y'" do
+      it "returns true" do
+        fund = described_class.new(attributes: { "isDefault" => "Y" })
+        expect(fund).to be_default
+      end
+    end
+
+    context "when default isn't 'Y'" do
+      it "returns false" do
+        expect(fund).not_to be_default
+      end
+    end
+  end
+
   describe "description" do
     it "is a String" do
       expect(fund.description).to be_instance_of(String)
@@ -61,6 +76,21 @@ RSpec.describe FaithTeams::API::V2::Entity::Fund, type: :model do
     it "is a String" do
       expect(fund.status).to be_instance_of(String)
       expect(fund.status).to eq("A")
+    end
+  end
+
+  describe "#active?" do
+    context "when status is 'A'" do
+      it "returns true" do
+        expect(fund).to be_active
+      end
+    end
+
+    context "when status isn't 'A'" do
+      it "returns false" do
+        fund = described_class.new(attributes: { "status" => "I" })
+        expect(fund).not_to be_active
+      end
     end
   end
 
