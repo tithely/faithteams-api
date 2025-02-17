@@ -7,13 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [4.2.0] - 2025-02-18
+
+### Changed
+
+1. Update ActiveSupport Version to support Rails 7.2.2.1. (IN-2565)
+
+## [4.1.1] - 2024-12-19
 
 ### Added
 
 1. Adds `Entity::Fund` `active?` and `default?` interrogatives
 
-## [4.0.1] - 2024-09-13
+## [4.0.1] - 2024-09-16
 
 This version adds support for Ruby 3.3.5. No real changes were required. We just needed to add some gems to the gemspec
 to silence deprecation warnings.
