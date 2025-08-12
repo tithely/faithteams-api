@@ -36,7 +36,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "http", "~> 5.1"
   spec.add_dependency "logger", "~> 1.6.1"
   spec.add_dependency "ostruct", "~> 0.6.0"
-  spec.add_dependency "rexml", "~> 3.3.6" # only needs to be specified to address security warning
+  spec.add_dependency "rexml", "~> 3.3.9" # only needs to be specified to address security warning
+  spec.add_dependency "thor", "~> 1.4.0"
 
   spec.add_development_dependency "byebug", "~> 11.1"
   spec.add_development_dependency "guard-rspec", "~> 4.7"
@@ -48,5 +49,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop-rake", "~> 0.6"
   spec.add_development_dependency "rubocop-rspec", "~> 1.42"
   spec.add_development_dependency "webmock", "~> 3.18"
-  spec.add_development_dependency "yard", "~> 0.9"
+  spec.add_development_dependency "yard", "~> 0.9.36"
 end
