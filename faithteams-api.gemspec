@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = "Provides methods and utilities for interacting with the faithteams API."
   spec.homepage      = "https://github.com/tithely/faithteams-api"
   spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 3.0.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 3.3.0")
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
@@ -36,17 +36,18 @@ Gem::Specification.new do |spec|
   spec.add_dependency "http", "~> 5.1"
   spec.add_dependency "logger", "~> 1.6.1"
   spec.add_dependency "ostruct", "~> 0.6.0"
-  spec.add_dependency "rexml", "~> 3.3.6" # only needs to be specified to address security warning
+  spec.add_dependency "rexml", "~> 3.3.9" # only needs to be specified to address security warning
+  spec.add_dependency "thor", "~> 1.4.0"
 
   spec.add_development_dependency "byebug", "~> 11.1"
   spec.add_development_dependency "guard-rspec", "~> 4.7"
   spec.add_development_dependency "simplecov", "~> 0.21"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.12"
-  spec.add_development_dependency "rubocop", "~> 1.42"
-  spec.add_development_dependency "rubocop-performance", "~> 1.17"
-  spec.add_development_dependency "rubocop-rake", "~> 0.6"
-  spec.add_development_dependency "rubocop-rspec", "~> 1.42"
+  spec.add_development_dependency "rubocop", "~> 1.73.2"
+  spec.add_development_dependency "rubocop-performance", "~> 1.24.0"
+  spec.add_development_dependency "rubocop-rake", "~> 0.7.1"
+  spec.add_development_dependency "rubocop-rspec", "~> 3.5.0"
   spec.add_development_dependency "webmock", "~> 3.18"
-  spec.add_development_dependency "yard", "~> 0.9"
+  spec.add_development_dependency "yard", "~> 0.9.36"
 end
