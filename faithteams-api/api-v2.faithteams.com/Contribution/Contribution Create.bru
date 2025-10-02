@@ -1,0 +1,40 @@
+meta {
+  name: Contribution Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://api-v2.faithteams.com/contributions
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "recordType":"H",
+      "personId":779137,
+      "batchId":195770,
+      "amount":"100.00",
+      "fee":"2.00",
+      "netAmount":"98.00",
+      "contributionTypeId":24,
+      "status":"A",
+      "note":"Date: 2023-07-17, Method: card, Memo: for the animals"
+    },
+    {
+      "recordType":"D",
+      "fundId":7894,
+      "personId":779137,
+      "batchId":195770,
+      "amount":"100.00",
+      "fee":"2.00",
+      "netAmount":"98.00"
+    }
+  ]
+}
+
+settings {
+  encodeUrl: true
+}

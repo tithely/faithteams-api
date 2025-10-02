@@ -1,0 +1,15 @@
+meta {
+  name: Organization
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://app.faithteams.com/api/v2/orgs/{{organization_id}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

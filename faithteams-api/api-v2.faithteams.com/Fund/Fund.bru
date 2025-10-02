@@ -1,0 +1,15 @@
+meta {
+  name: Fund
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api-v2.faithteams.com/funds/{{fund_id}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

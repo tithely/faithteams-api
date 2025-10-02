@@ -1,0 +1,23 @@
+meta {
+  name: Batch Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://api-v2.faithteams.com/batches
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title":"Tithely 2023-07-19 Bank",
+    "dtm":"2023-07-19 00:00:00",
+    "status":"O"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,32 @@
+meta {
+  name: Fund Update
+  type: http
+  seq: 4
+}
+
+put {
+  url: https://api-v2.faithteams.com/funds/{{fund_id}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Doggy Fund",
+    "description": "$ for the pups",
+    "status": "A",
+    "onlineStatus": "I",
+    "sort": 0,
+    "taxDeductible": "Y",
+    "isDefault": "Y",
+    "createdDtm": "2023-04-17 15:01:26",
+    "createdUser": 27850,
+    "updatedDtm": "2023-04-17 15:21:37",
+    "updatedUser": 27850,
+    "defaultFund": true
+  }
+}
+
+settings {
+  encodeUrl: true
+}

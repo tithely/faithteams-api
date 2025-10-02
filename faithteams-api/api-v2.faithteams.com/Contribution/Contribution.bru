@@ -1,0 +1,15 @@
+meta {
+  name: Contribution
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api-v2.faithteams.com/contributions/{{contribution_parent_id}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

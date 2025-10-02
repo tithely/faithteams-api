@@ -1,0 +1,21 @@
+meta {
+  name: Teams
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://app.faithteams.com/api/v2/teams
+  body: none
+  auth: inherit
+}
+
+script:post-response {
+  let body = res.getBody();
+  bru.setEnvVar("organization_id", body.data[0].orgId);
+  bru.setEnvVar("team_id", body.data[0].teamId);
+}
+
+settings {
+  encodeUrl: true
+}
