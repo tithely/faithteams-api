@@ -1,9 +1,9 @@
 {
-  "version": "1",
-  "name": "faithteams-api",
-  "type": "collection",
-  "ignore": [
-    "node_modules",
-    ".git"
-  ]
+    "version": "1",
+    "name": "faithteams-api",
+    "type": "collection",
+    "ignore": [
+        "node_modules",
+        ".git"
+    ]
 }
