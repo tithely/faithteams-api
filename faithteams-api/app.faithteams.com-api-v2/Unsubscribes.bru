@@ -1,0 +1,19 @@
+meta {
+  name: Unsubscribes
+  type: http
+  seq: 7
+}
+
+get {
+  url: https://app.faithteams.com/api/v2/unsubscribes?personId={{person_id}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  personId: {{person_id}}
+}
+
+settings {
+  encodeUrl: true
+}

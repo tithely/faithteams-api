@@ -1,0 +1,20 @@
+meta {
+  name: Funds
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api-v2.faithteams.com/funds
+  body: none
+  auth: inherit
+}
+
+script:post-response {
+  let body = res.getBody();
+  bru.setEnvVar("fund_id", String(body.data[0].fundId));
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,13 @@
+meta {
+  name: api-v2.faithteams.com
+  seq: 3
+}
+
+auth {
+  mode: basic
+}
+
+auth:basic {
+  username: {{process.env.user_id}}
+  password: {{process.env.password}}
+}

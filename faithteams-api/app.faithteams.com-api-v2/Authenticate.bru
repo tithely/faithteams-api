@@ -1,0 +1,26 @@
+meta {
+  name: Authenticate
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://app.faithteams.com/api/v2/authenticate
+  body: none
+  auth: inherit
+}
+
+script:pre-request {
+  // Require the btoa library
+  const btoa = require('btoa');
+  // Get the username and password from environment variables
+  const authorization = bru.getEnvVar("user_id") + ":" + bru.getEnvVar("password");
+  // Encode the credentials using btoa()
+  const authorizationBase64 = btoa(authorization);
+  // Set the Authorization header with the Base64-encoded string
+  req.setHeader("Authorization", "Basic " + authorizationBase64);
+}
+
+settings {
+  encodeUrl: true
+}

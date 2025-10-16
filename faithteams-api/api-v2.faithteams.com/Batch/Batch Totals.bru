@@ -1,0 +1,19 @@
+meta {
+  name: Batch Totals
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://api-v2.faithteams.com/batches/totals?batchIds={{batch_id}},{{batch_id_2}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  batchIds: {{batch_id}},{{batch_id_2}}
+}
+
+settings {
+  encodeUrl: true
+}

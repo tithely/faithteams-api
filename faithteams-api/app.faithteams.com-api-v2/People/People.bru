@@ -1,0 +1,27 @@
+meta {
+  name: People
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://app.faithteams.com/api/v2/people?status=A
+  body: none
+  auth: inherit
+}
+
+params:query {
+  status: A
+  ~lastName: Simpson
+  ~firstName: Homer
+  ~homeEmail: bart@simpsons.com
+}
+
+script:post-response {
+  let body = res.getBody();
+  bru.setEnvVar("person_id", body.data[0].personId);
+}
+
+settings {
+  encodeUrl: true
+}
