@@ -1,0 +1,15 @@
+meta {
+  name: Batch
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api-v2.faithteams.com/batches/{{batch_id}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

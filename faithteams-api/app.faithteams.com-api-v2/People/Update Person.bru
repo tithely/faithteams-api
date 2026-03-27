@@ -1,0 +1,26 @@
+meta {
+  name: Update Person
+  type: http
+  seq: 4
+}
+
+put {
+  url: https://app.faithteams.com/api/v2/people/{{person_id_created}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "Maggie",
+    "lastName": "Simpson",
+    "status":"A",
+    "homeEmail":"bart@the_simpsons.com",
+    "createdDtm":"2023-04-21 13:08:51",
+    "createdUser":"27850"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

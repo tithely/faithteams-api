@@ -1,0 +1,30 @@
+meta {
+  name: Fund Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://api-v2.faithteams.com/funds
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "fundId":-1,
+    "name":"Cat Fund",
+    "description":"$$ for kitties",
+    "status":"A",
+    "onlineStatus":"I",
+    "taxDeductible":"Y",
+    "isDefault":"N",
+    "sort":1,
+    "showInternally":true,
+    "showExternally":false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

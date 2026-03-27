@@ -32,22 +32,18 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "activesupport", "~> 7.2.2"
+  spec.add_dependency "activesupport", "~> 7.2"
   spec.add_dependency "http", "~> 5.1"
-  spec.add_dependency "logger", "~> 1.6.1"
-  spec.add_dependency "ostruct", "~> 0.6.0"
-  spec.add_dependency "rexml", "~> 3.3.9" # only needs to be specified to address security warning
-  spec.add_dependency "thor", "~> 1.4.0"
 
   spec.add_development_dependency "byebug", "~> 11.1"
   spec.add_development_dependency "guard-rspec", "~> 4.7"
   spec.add_development_dependency "simplecov", "~> 0.21"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.12"
-  spec.add_development_dependency "rubocop", "~> 1.73.2"
-  spec.add_development_dependency "rubocop-performance", "~> 1.24.0"
-  spec.add_development_dependency "rubocop-rake", "~> 0.7.1"
-  spec.add_development_dependency "rubocop-rspec", "~> 3.5.0"
+  spec.add_development_dependency "rubocop", "~> 1.73"
+  spec.add_development_dependency "rubocop-performance", "~> 1.24"
+  spec.add_development_dependency "rubocop-rake", "~> 0.7"
+  spec.add_development_dependency "rubocop-rspec", "~> 3.5"
   spec.add_development_dependency "webmock", "~> 3.18"
-  spec.add_development_dependency "yard", "~> 0.9.36"
+  spec.add_development_dependency "yard", "~> 0.9"
 end

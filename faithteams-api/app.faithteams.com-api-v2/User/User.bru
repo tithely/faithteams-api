@@ -1,0 +1,15 @@
+meta {
+  name: User
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://app.faithteams.com/api/v2/users/{{user_id}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Authenticate
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.faithteams.com/api/v1/authenticate
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: {{process.env.user_id}}
+  password: {{process.env.password}}
+}
+
+script:post-response {
+  let body = res.getBody();
+  bru.setEnvVar("auth_token", body.data.token);
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Create Person
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://app.faithteams.com/api/v2/people
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "Bart",
+    "lastName": "Simpson",
+    "gender": "M"
+  }
+}
+
+script:post-response {
+  let body = res.getBody();
+  bru.setEnvVar("person_id_created", body.data.personId);
+}
+
+settings {
+  encodeUrl: true
+}

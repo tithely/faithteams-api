@@ -29,6 +29,25 @@ Or install it yourself as:
 
 `gem install faithteams`
 
+## VS Code Bruno Extension
+
+We are now using the [Bruno API Client](https://docs.usebruno.com/introduction/what-is-bruno) for developing and testing 2nd party API requests. You can use a desktop app or VS Code extension to use Bruno.
+
+### Desktop App
+
+1. Simply follow these instructions for your desktop app [installation options](https://docs.usebruno.com/get-started/bruno-basics/download).
+
+### VS Code Extension
+
+1. If you don't already have it, install the VS Code Bruno Extension.
+1. After opening the extension, click the + button to open a "collection".
+    1. Find the root level '[second_party]-api' directory. (ie 'faithteams-api')
+1. Make a copy of the .env.template file (and make sure to just call it .env) and fill in the necessary values from 1Password.
+1. In the left pane, open the ... menu beside faithteams-api and select *settings*.
+1. Select your desired environment to use with this collection in the upper right (most likely *FaithTeams*).
+1. You should now be ready to make some API calls!
+1. See Bruno's [VS Code Extension Documentation](https://docs.usebruno.com/vs-code-extension/overview) for more details.
+
 ## Contributing
 
 ### How to Contribute

@@ -1,0 +1,32 @@
+meta {
+  name: Batches
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api-v2.faithteams.com/batches?sort=dtm&sortDirection=desc&dtm=2023-08-28
+  body: none
+  auth: inherit
+}
+
+params:query {
+  sort: dtm
+  sortDirection: desc
+  dtm: 2023-08-28
+  ~status: O
+  ~title: 2023-08-28 Central Campus Tithely Card
+  ~limit:
+  ~start:
+  ~batchIds: 200782
+}
+
+script:post-response {
+  let body = res.getBody();
+  bru.setEnvVar("batch_id", String(body.data[0].batchId));
+  bru.setEnvVar("batch_id_2", String(body.data[1].batchId));
+}
+
+settings {
+  encodeUrl: true
+}
