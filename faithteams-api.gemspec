@@ -24,9 +24,15 @@ Gem::Specification.new do |spec|
   spec.metadata["documentation_uri"] = "https://github.com/tithely/faithteams-api/blob/master/README.md"
 
   # Specify which files should be added to the gem when it is released.
-  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
+  # Allowlisted, not denylisted: only what the gem needs at runtime plus a
+  # few standard root docs. A denylist has to be remembered and updated
+  # every time a new dev-tooling directory shows up in the repo - that's
+  # how thunder-tests/ (and its live test-tenant credential) ended up
+  # shipping in the published gem unnoticed.
   spec.files         = Dir.chdir(File.expand_path("..", __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+    `git ls-files -z`.split("\x0").select do |f|
+      f.match(%r{^(lib|exe)/}) || %w[README.md LICENSE CHANGELOG.md faithteams-api.gemspec].include?(f)
+    end
   end
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }

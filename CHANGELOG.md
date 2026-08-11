@@ -7,6 +7,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.6.2]
+
+### Removed
+
+1. Remove `thunder-tests/`, a dead Thunder Client collection fully superseded by the Bruno collection already checked in - it held a live FaithTeams test-tenant `auth_token` in a committed, unencrypted environment file, which the gem's file filter didn't exclude, so it shipped inside every published gem version on RubyGems. (SEC25-778)
+
+### Fixed
+
+1. Switch the gemspec's packaging filter from a denylist (`reject test/spec/features`) to an allowlist (`lib/`, `exe/`, plus README/LICENSE/CHANGELOG). The denylist required remembering to add every new dev-tooling directory - that's exactly how `thunder-tests/` went unnoticed. The Bruno collection, `AGENTS.md`, `CLAUDE.md`, `Guardfile`, `.github/`, and other dev-only content were also shipping in the gem unintentionally; none of them are needed at runtime. (SEC25-778)
+
 ## [4.6.1]
 
 ### Changed
