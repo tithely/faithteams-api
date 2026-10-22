@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+1. Pin the EditorConfig workflow's `actions/setup-node` to Node `24.22.1` (was a floating `24`), so CI runs the October 2026 Node.js security release instead of the runner's cached older 24.x. CI only; no change to the published gem. (EPDT-8007)
+
 ## [4.6.2]
 
 ### Removed
